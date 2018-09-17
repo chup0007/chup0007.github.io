@@ -1,0 +1,190 @@
+.wrap {
+    display: flex;
+    justify-content: center;
+
+}
+
+.levels {
+    display: flex;
+    margin-top: 10%;
+    background-color: paleturquoise;
+    width: 600px;
+    height: 280px;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid teal;
+}
+/* cards at the end */
+.vis {
+    animation: vis 3s forwards;
+}
+
+@keyframes vis {
+    0% {
+        transform: none;
+        opacity: 1
+    }
+    100% {
+        transform: translateY(700px);
+        opacity: 0
+    }
+}
+
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
+
+.b {
+    display: flex;
+    background-color: turquoise;
+    padding: 8px;
+    border-radius: 40%;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 2em;
+    font-family: Roboto;
+    font-weight: 800;
+    color: teal;
+}
+
+.b:hover {
+    background-color: teal;
+    color: paleturquoise;
+    transition: all 0.4s;
+}
+
+.cards {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 2;
+    perspective: 1000px;
+}
+
+.card {
+    margin: 3%;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 180px;
+    height: 220px;
+    cursor: pointer;
+}
+
+.frontS {
+    animation: fade 1s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: teal;
+    z-index: 4;
+    width: 180px;
+    height: 220px;
+    transform: rotateY(0deg);
+}
+
+.backS {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Khmer', cursive;
+    font-size: 2em;
+    background-color: teal;
+    color: MediumTurquoise;
+    z-index: 3;
+    width: 180px;
+    height: 220px;
+    font-size: 4em;
+    transform: rotateY(180deg);
+}
+
+.frontS:hover {
+    background-color: cadetblue;
+    transition: 0.3s;
+}
+
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+.frontS,
+.backS {
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.back {
+    animation: fade 1s;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 0;
+}
+
+/* end title "You won" */
+.end {
+    color: teal;
+    font-weight: 900;
+    font-size: 4em;
+    z-index: 99;
+    position: absolute;
+    margin-left: 32.3%;
+    margin-top: -160px;
+    animation: fade1 4s forwards;
+}
+
+/* refresh "play again" */
+.refr {
+    color: teal;
+    background-color: powderblue;
+    border-radius: 25%;
+    padding: 7px;
+    font-weight: 600;
+    font-size: 2.5em;
+    z-index: 99;
+    position: absolute;
+    margin-left: 37.1%;
+    margin-top: -60px;
+    animation: fade 2s;
+    cursor: pointer;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fade1 {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}

@@ -1,0 +1,71 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  color: DarkCyan;
+}
+
+.decks {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.deck, .card {
+  width: 200px;
+  height: 300px;
+  background-color: CadetBlue;
+  border: 10px solid DarkCyan;
+  color: PowderBlue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  padding: 30px;
+}
+
+.deck {
+  font-size: 2em;
+}
+
+.view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(176, 224, 230, 0.9);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+  margin-top: 20px;
+}
+
+.ctrl {
+  flex-grow: 1;
+  border: 1px solid DarkCyan;
+  background-color: CadetBlue;
+  cursor: pointer;
+  text-align: center;
+  color: PowderBlue;
+  font-size: 1.2em;
+  font-weight: 700;
+
+}
