@@ -646,7 +646,7 @@ input[type="submit"]:hover{
 .back{
   height: auto;
   top:-40px;
-  padding-top: 20px;
+  padding-top: 5px;
   padding-bottom: 20px;
 }
 
@@ -845,7 +845,7 @@ margin-top: 20px;
   .down{
     top: 400px;
   }
-  
+
 
   #cardO{
     margin-top: -150px;
