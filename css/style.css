@@ -764,6 +764,10 @@ visibility: hidden;
 
 @media screen and (min-width: 35rem) and (max-width: 50rem){
 
+  #cardO{
+    margin-top: -150px;
+  }
+
 .dropdown-content{
   margin-left: -90px;
 }
@@ -818,7 +822,11 @@ margin-top: 20px;
 }
 
 
-@media screen and (min-width: 50rem) and (max-width: 65rem){
+@media screen and (min-width: 50rem) and (max-width: 75rem){
+
+  #cardO{
+    margin-top: -150px;
+  }
 
 .c1{
   margin-right: 10px;
