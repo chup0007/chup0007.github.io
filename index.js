@@ -13,10 +13,12 @@ card.addEventListener('click', function (event) {
 
 function flip () {
   card.classList.add('flip')
+  $card.classList.add('down')
 }
 
 function remove () {
   card.classList.remove('flip')
+  $card.classList.remove('down')
 }
 
 

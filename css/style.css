@@ -416,7 +416,7 @@ transition: 0.2s;
     background-color: rgba(255,255,255,0.3);
     z-index: 3;
     width: 550px;
-    height: 450px;
+    height: 70%;
     padding-top: 70px;
     padding-bottom: 70px;
     transform: rotateY(180deg);
@@ -632,9 +632,23 @@ input[type="submit"]:hover{
 
 
 @media screen and (max-width: 35rem){
-  #card, #cardO{
-    margin-top:-120px;
+  #card{
+  top:-300px;
   }
+
+#cardO{
+  margin-top:-220px;
+}
+.down{
+  top: 400px;
+}
+
+.back{
+  height: auto;
+  top:-40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
   .frontC{
     padding-bottom: 100px;
@@ -734,7 +748,7 @@ visibility: hidden;
 }
 
 .work{
-  height: 1000px;
+  height: 1300px;
   width: 100%;
 }
 
