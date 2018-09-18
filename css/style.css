@@ -782,6 +782,10 @@ visibility: hidden;
     margin-top: -150px;
   }
 
+  .down{
+    top: 400px;
+  }
+  
 .dropdown-content{
   margin-left: -90px;
 }
