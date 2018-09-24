@@ -627,7 +627,8 @@ input[type="submit"]:hover{
 
 .proj{
     transform:translateX(460px);
-    margin-top: -18px;
+    top: 58px;
+    width: 45%;
 }
 
 
